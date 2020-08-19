@@ -1,8 +1,17 @@
 function takeANumber(line,newPerson) {
-  line.push(newPerson);
-  let num = line.length;
-  return "Welcome, "+ newPerson +". You are number " + num + " in line."
+  
+//   line.push(newPerson);
+//   let num = line.length;
+//   return "Welcome, "+ newPerson +". You are number " + num + " in line."
+// }
+
+let count = 0;
+function takeANumber(line) {
+  count++;
+  line.push(count);
+  return "Welcome, you are number " + count;
 }
+
 
 function nowServing(line) {
   let person = line[0];
